@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Base Reflectivity",
+        "value": "base_reflectivity"
+    },
+    {
+        "name": "Storm Relative Motion",
+        "value": "storm_relative_motion"
+    },
+    {
+        "name": "Base Velocity",
+        "value": "base_velocity"
+    },
+    {
+        "name": "One-Hour Precipitation",
+        "value": "one_hour_precipitation"
+    },
+    {
+        "name": "Composite Reflectivity",
+        "value": "composite_reflectivity"
+    },
+    {
+        "name": "Storm Total Precipitation",
+        "value": "storm_total_precipitation"
+    }
+]

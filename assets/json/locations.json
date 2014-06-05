@@ -1,0 +1,353 @@
+[
+    {
+        "nexrad_system" : "ABERDEEN",
+        "icao" : "KABR",
+        "rda_location" : "ABERDEEN, SD",
+        "location_city" : "Aberdeen",
+        "location_state_full" : "South Dakota",
+        "responsible_wfo": "ABERDEEN, SD",
+        "wfo_sid" : "ABR"
+    },
+    {
+        "nexrad_system" : "BISMARCK",
+        "icao" : "KBIS",
+        "rda_location" : "BISMARCK, ND",
+        "location_city" : "Bismarck",
+        "location_state_full" : "North Dakota",
+        "responsible_wfo": "BISMARCK, ND",
+        "wfo_sid" : "BIS"
+    },
+    {
+        "nexrad_system" : "CHEYENNE",
+        "icao" : "KCYS",
+        "rda_location" : "CHEYENNE, WY",
+        "location_city" : "Cheyenne",
+        "location_state_full" : "Wyoming",
+        "responsible_wfo": "CHEYENNE, WY",
+        "wfo_sid" : "CYS"
+    },
+    {
+        "nexrad_system" : "CHICAGO",
+        "icao" : "KLOT",
+        "rda_location" : "ROMEOVILLE, IL",
+        "location_city" : "Romeoville",
+        "location_state_full" : "Illinois",
+        "responsible_wfo": "CHICAGO, IL",
+        "wfo_sid" : "LOT"
+    },
+    {
+        "nexrad_system" : "DENVER",
+        "icao" : "KFTG",
+        "rda_location" : "FRONT RANGE AP, CO",
+        "location_city" : "Front Range AP",
+        "location_state_full" : "Colorado",
+        "responsible_wfo": "DENVER/BOULDER, CO",
+        "wfo_sid" : "BOU"
+    },
+    {
+        "nexrad_system" : "DES MOINES",
+        "icao" : "KDMX",
+        "rda_location" : "JOHNSTON, IA",
+        "location_city" : "Johnston",
+        "location_state_full" : "Iowa",
+        "responsible_wfo": "DES MOINES, IA",
+        "wfo_sid" : "DMX"
+    },
+    {
+        "nexrad_system" : "DETROIT",
+        "icao" : "KDTX",
+        "rda_location" : "WHITE LAKE, MI",
+        "location_city" : "White Lake",
+        "location_state_full" : "Michigan",
+        "responsible_wfo": "DETROIT, MI",
+        "wfo_sid" : "DTX"
+    },
+    {
+        "nexrad_system" : "DODGE CITY",
+        "icao" : "KDDC",
+        "rda_location" : "DODGE CITY, KS",
+        "location_city" : "Dodge City",
+        "location_state_full" : "Kansas",
+        "responsible_wfo": "DODGE CITY, KS",
+        "wfo_sid" : "DDC"
+    },
+    {
+        "nexrad_system" : "DULUTH",
+        "icao" : "KDLH",
+        "rda_location" : "DULUTH, MN",
+        "location_city" : "Duluth",
+        "location_state_full" : "Minnesota",
+        "responsible_wfo": "DULUTH, MN",
+        "wfo_sid" : "DLH"
+    },
+    {
+        "nexrad_system" : "EVANSVILLE, IN",
+        "icao" : "KVWX",
+        "rda_location" : "OWENSVILLE, IN",
+        "location_city" : "Owensville",
+        "location_state_full" : "Indiana",
+        "responsible_wfo": "PADUCAH, KY",
+        "wfo_sid" : "VWX"
+    },
+    {
+        "nexrad_system" : "FARGO/GRAND FORKS",
+        "icao" : "KMVX",
+        "rda_location" : "GRAND FORKS, ND",
+        "location_city" : "Grand Forks",
+        "location_state_full" : "North Dakota",
+        "responsible_wfo": "FARGO/GRAND FORKS, ND",
+        "wfo_sid" : "FGF"
+    },
+    {
+        "nexrad_system" : "GOODLAND",
+        "icao" : "KGLD",
+        "rda_location" : "GOODLAND, KS",
+        "location_city" : "Goodland",
+        "location_state_full" : "Kansas",
+        "responsible_wfo": "GOODLAND, KS",
+        "wfo_sid" : "GLD"
+    },
+    {
+        "nexrad_system" : "GRAND ISLAND",
+        "icao" : "KUEX",
+        "rda_location" : "BLUE HILL, NE",
+        "location_city" : "Blue Hill",
+        "location_state_full" : "Nebraska",
+        "responsible_wfo": "HASTINGS, NE",
+        "wfo_sid" : "GID"
+    },
+    {
+        "nexrad_system" : "GRAND JUNCTION",
+        "icao" : "KGJX",
+        "rda_location" : "GRAND JUNCTION, CO",
+        "location_city" : "Grand Junction",
+        "location_state_full" : "Colorado",
+        "responsible_wfo": "GRAND JUNCTION, CO",
+        "wfo_sid" : "GJT"
+    },
+    {
+        "nexrad_system" : "GRAND RAPIDS",
+        "icao" : "KGRR",
+        "rda_location" : "GRAND RAPIDS, MI",
+        "location_city" : "Grand Rapids",
+        "location_state_full" : "Michigan",
+        "responsible_wfo": "GRAND RAPIDS, MI",
+        "wfo_sid" : "GRR"
+    },
+    {
+        "nexrad_system" : "GREEN BAY",
+        "icao" : "KGRB",
+        "rda_location" : "GREEN BAY, WI",
+        "location_city" : "Green Bay",
+        "location_state_full" : "Wisconsin",
+        "responsible_wfo": "GREEN BAY, WI",
+        "wfo_sid" : "GRB"
+    },
+    {
+        "nexrad_system" : "INDIANAPOLIS",
+        "icao" : "KIND",
+        "rda_location" : "INDIANAPOLIS, IN",
+        "location_city" : "Indianapolis",
+        "location_state_full" : "Indiana",
+        "responsible_wfo": "INDIANAPOLIS, IN",
+        "wfo_sid" : "IND"
+    },
+    {
+        "nexrad_system" : "JACKSON, KY",
+        "icao" : "KJKL",
+        "rda_location" : "JACKSON, KY",
+        "location_city" : "Jackson",
+        "location_state_full" : "Kentucky",
+        "responsible_wfo": "JACKSON, KY",
+        "wfo_sid" : "JKL"
+    },
+    {
+        "nexrad_system" : "LA CROSSE",
+        "icao" : "KARX",
+        "rda_location" : "LA CROSSE, WI",
+        "location_city" : "La Crosse",
+        "location_state_full" : "Wisconsin",
+        "responsible_wfo": "LA CROSSE, WI",
+        "wfo_sid" : "ARX"
+    },
+    {
+        "nexrad_system" : "LINCOLN",
+        "icao" : "KILX",
+        "rda_location" : "LINCOLN, IL",
+        "location_city" : "Lincoln",
+        "location_state_full" : "Illinois",
+        "responsible_wfo": "LINCOLN/CENTRAL ILLINOIS, IL",
+        "wfo_sid" : "ILX"
+    },
+    {
+        "nexrad_system" : "LOUISVILLE",
+        "icao" : "KLVX",
+        "rda_location" : "FORT KNOX, KY",
+        "location_city" : "Fort Knox",
+        "location_state_full" : "Kentucky",
+        "responsible_wfo": "LOUISVILLE, KY",
+        "wfo_sid" : "LMK"
+    },
+    {
+        "nexrad_system" : "MARQUETTE",
+        "icao" : "KMQT",
+        "rda_location" : "NEGAUNEE, MI",
+        "location_city" : "Negaunee",
+        "location_state_full" : "Michigan",
+        "responsible_wfo": "MARQUETTE",
+        "wfo_sid" : "MQT"
+    },
+    {
+        "nexrad_system" : "MILWAUKEE",
+        "icao" : "KMKX",
+        "rda_location" : "DOUSMAN, WI",
+        "location_city" : "Dousman",
+        "location_state_full" : "Wisconsin",
+        "responsible_wfo": "MILWAUKEE, WI",
+        "wfo_sid" : "MKX"
+    },
+    {
+        "nexrad_system" : "MINNEAPOLIS",
+        "icao" : "KMPX",
+        "rda_location" : "CHANHASSEN, MN",
+        "location_city" : "Chanhassen",
+        "location_state_full" : "Minnesota",
+        "responsible_wfo": "MINNEAPOLIS, MN",
+        "wfo_sid" : "MPX"
+    },
+    {
+        "nexrad_system" : "NCL MICHIGAN",
+        "icao" : "KAPX",
+        "rda_location" : "GAYLORD, MI",
+        "location_city" : "Gaylord",
+        "location_state_full" : "Michigan",
+        "responsible_wfo": "GAYLORD/ALPENA, MI",
+        "wfo_sid" : "APX"
+    },
+    {
+        "nexrad_system" : "NORTH PLATTE",
+        "icao" : "KLNX",
+        "rda_location" : "NORTH PLATTE, NE",
+        "location_city" : "North Platte",
+        "location_state_full" : "Nebraska",
+        "responsible_wfo": "NORTH PLATTE, NE",
+        "wfo_sid" : "LBF"
+    },
+    {
+        "nexrad_system" : "NORTHERN INDIANA",
+        "icao" : "KIWX",
+        "rda_location" : "NORTH WEBSTER, IN",
+        "location_city" : "North Webster",
+        "location_state_full" : "Indiana",
+        "responsible_wfo": "N. WEBSTER/NORTHERN, IN",
+        "wfo_sid" : "IWX"
+    },
+    {
+        "nexrad_system" : "OMAHA",
+        "icao" : "KOAX",
+        "rda_location" : "VALLEY, NE",
+        "location_city" : "Valley",
+        "location_state_full" : "Nebraska",
+        "responsible_wfo": "OMAHA, NE",
+        "wfo_sid" : "OAX"
+    },
+    {
+        "nexrad_system" : "PADUCAH",
+        "icao" : "KPAH",
+        "rda_location" : "PADUCAH, KY",
+        "location_city" : "Paducah",
+        "location_state_full" : "Kentucky",
+        "responsible_wfo": "PADUCAH, KY",
+        "wfo_sid" : "PAH"
+    },
+    {
+        "nexrad_system" : "PLEASANT HILL",
+        "icao" : "KEAX",
+        "rda_location" : "PLEASANT HILL, MO",
+        "location_city" : "Pleasant Hill",
+        "location_state_full" : "Missouri",
+        "responsible_wfo": "PLEASANT HILL, MO",
+        "wfo_sid" : "EAX"
+    },
+    {
+        "nexrad_system" : "PUEBLO",
+        "icao" : "KPUX",
+        "rda_location" : "PUEBLO, CO",
+        "location_city" : "Pueblo",
+        "location_state_full" : "Colorado",
+        "responsible_wfo": "PUEBLO, CO",
+        "wfo_sid" : "PUB"
+    },
+    {
+        "nexrad_system" : "QUAD CITIES",
+        "icao" : "KDVN",
+        "rda_location" : "DAVENPORT, IA",
+        "location_city" : "Davenport",
+        "location_state_full" : "Iowa",
+        "responsible_wfo": "QUAD CITIES, IA",
+        "wfo_sid" : "DVN"
+    },
+    {
+        "nexrad_system" : "RAPID CITY",
+        "icao" : "KUDX",
+        "rda_location" : "NEW UNDERWOOD, SD",
+        "location_city" : "New Underwood",
+        "location_state_full" : "South Dakota",
+        "responsible_wfo": "RAPID CITY, SD",
+        "wfo_sid" : "UNR"
+    },
+    {
+        "nexrad_system" : "RIVERTON/LANDER",
+        "icao" : "KRIW",
+        "rda_location" : "RIVERTON, WY",
+        "location_city" : "Riverton",
+        "location_state_full" : "Wyoming",
+        "responsible_wfo": "RIVERTON, WY",
+        "wfo_sid" : "RIW"
+    },
+    {
+        "nexrad_system" : "SIOUX FALLS",
+        "icao" : "KFSD",
+        "rda_location" : "SIOUX FALLS, SD",
+        "location_city" : "Sioux Falls",
+        "location_state_full" : "South Dakota",
+        "responsible_wfo": "SIOUX FALLS, IA",
+        "wfo_sid" : "FSD"
+    },
+    {
+        "nexrad_system" : "SPRINGFIELD",
+        "icao" : "KSGF",
+        "rda_location" : "SPRINGFIELD, MO",
+        "location_city" : "Springfield",
+        "location_state_full" : "Missouri",
+        "responsible_wfo": "SPRINGFIELD, MO",
+        "wfo_sid" : "SGF"
+    },
+    {
+        "nexrad_system" : "ST LOUIS",
+        "icao" : "KLSX",
+        "rda_location" : "WELDON SPRING, MO",
+        "location_city" : "Weldon Spring",
+        "location_state_full" : "Missouri",
+        "responsible_wfo": "ST. LOUIS, MO",
+        "wfo_sid" : "LSX"
+    },
+    {
+        "nexrad_system" : "TOPEKA",
+        "icao" : "KTWX",
+        "rda_location" : "TOPEKA, KS",
+        "location_city" : "Topeka",
+        "location_state_full" : "Kansas",
+        "responsible_wfo": "TOPEKA, KS",
+        "wfo_sid" : "TOP"
+    },
+    {
+        "nexrad_system" : "WICHITA",
+        "icao" : "KICT",
+        "rda_location" : "WICHITA, KS",
+        "location_city" : "Wichita",
+        "location_state_full" : "Kansas",
+        "responsible_wfo": "WICHITA, KS",
+        "wfo_sid" : "ICT"
+    }
+]

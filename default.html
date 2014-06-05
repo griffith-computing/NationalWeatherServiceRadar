@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>NationalWeatherServiceRadar</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <!-- Builders -->
+    <script src="/js/builders/BaseReflectivityUrlBuilder.js"></script>
+    <script src="/js/builders/OverlaysUrlBuilder.js"></script>
+    <script src="/js/builders/RadarImageUrlBuilder.js"></script>
+
+    <!-- Constants -->
+    <script src="/js/consts/RadarImageConstants.js"></script>
+
+    <!-- Renderers -->
+    <script src="/js/renderers/RadarImageRenderer.js"></script>
+    
+    <!-- Parsers -->
+    <script src="/js/parsers/JsonParser.js"></script>
+
+    <!-- Services -->
+    <script src="/js/services/LocationService.js"></script>
+    <script src="/js/services/RadarOptionsService.js"></script>
+    <script src="/js/services/LayerOptionsService.js"></script>
+
+    <!-- Controls -->
+    <script src="/js/controls/JsonSelect.js"></script>
+    <script src="/js/controls/JsonCheckboxGroup.js"></script>
+
+    <!-- NationalWeatherServiceRadar references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <!-- Layers
+        TOPO
+        RADAR
+        COUNTIES
+        RIVERS
+        HIGHWAYS
+        CITIES
+        WARNINGS
+        LEGEND 
+        -->
+    <canvas id="cvs" width="600" height="550" style="z-index:0;">
+        Canvas is not supported.
+    </canvas>
+    <canvas id="radarCanvas" width="600" height="550" style="z-index:1">
+        Canvas is not supported.
+    </canvas>
+
+    <div id="locationsSelect" data-win-control="Controls.JsonSelect"></div>
+
+    <div id="radarOptionsSelect" data-win-control="Controls.JsonSelect"></div>
+
+    <div id="layerOptionsGroup" data-win-control="Controls.JsonCheckboxGroup"></div>
+
+</body>
+</html>

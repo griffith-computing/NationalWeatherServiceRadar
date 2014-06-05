@@ -1,0 +1,34 @@
+[
+    {
+        "name":"Topography",
+        "value":"topo"
+    },
+    {
+        "name":"Counties",
+        "value":"counties"
+    },
+    {
+        "name":"Rivers",
+        "value":"rivers"
+    },
+    {
+        "name":"Highways",
+        "value":"highways"
+    },
+    {
+        "name":"Cities",
+        "value":"cities"
+    },
+    {
+        "name":"Radar",
+        "value":"radar"
+    },
+    {
+        "name":"Warnings",
+        "value":"warnings"
+    },
+    {
+        "name":"Legend",
+        "value":"legend"
+    }
+]

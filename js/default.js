@@ -1,6 +1,7 @@
 ﻿// For an introduction to the Blank template, see the following documentation:
 // http://go.microsoft.com/fwlink/?LinkId=232509
 /// <reference path="/js/renderers/RadarImageRenderer.js" />
+/// <reference path="/js/renderers/TopographyLayerRenderer.js" />
 /// <reference path="/js/consts/LayerOptionConstants.js" />
 (function () {
     "use strict";
@@ -14,6 +15,7 @@
     var radarOptionsService = new Services.RadarOptionsService();
     var layerOptionsService = new Services.LayerOptionsService();
     var radarImageRenderer = new Renderers.RadarImageRenderer();
+    var topoImageRenderer = new Renderers.TopographyLayerRenderer();
 
 
     app.onactivated = function (args) {
@@ -53,7 +55,9 @@
                 });
                 
                 //radarImageRenderer.setVisible(true);
-                radarImageRenderer.setCanvasRenderingContext(document.getElementById("radarCanvas").getContext("2d"))
+                radarImageRenderer.setCanvasRenderingContext(document.getElementById("radarCanvas").getContext("2d"));
+                topoImageRenderer.setCanvasRenderingContext(document.getElementById("topoCanvas").getContext("2d"));
+
                 WinJS.Application.addEventListener("OnSelectEvent", jsonSelectOnSelectHandler.bind(this));
             }));
         }
@@ -66,6 +70,7 @@
 
         switch (value) {
             case Constants.LayerOptionConstants.TOPOGRAPHY_LAYER:
+                topoImageRenderer.setVisible(selected);
                 break;
             case Constants.LayerOptionConstants.COUNTIES_LAYER:
                 break;
@@ -93,6 +98,7 @@
 
     function updateRenderLocations(locationId) {
         radarImageRenderer.setRadarSiteId(locationId);
+        topoImageRenderer.setRadarSiteId(locationId);
     };
 
     function updateRadarImageRendererImageType(imageType) {
@@ -105,7 +111,7 @@
     };
 
     function locationsSelectOnSelectHandler(evt) {
-        updateRenderLocations(evt.value)
+        updateRenderLocations(evt.value);
     };
 
     function jsonSelectOnSelectHandler(evt) {

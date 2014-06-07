@@ -13,7 +13,7 @@
                 this.citiesOverlayUrl = this.overlaysUrl + "/Cities";
                 this.shortUrlFragment = "/Short";
                 this.longUrlFragment = "/Long";
-                this.extension = ".jpg";
+                this.extension = ".gif";
             }, {
                 /* Instance Methods */
                 getShortRangeTopoOverlayForRadarSite: function (radarSite) {
@@ -21,7 +21,7 @@
                     url += this.shortUrlFragment;
                     url += "/";
                     url += radarSite;
-                    url += this.extension;
+                    url += "_Topo_Short.jpg";
 
                     return url;
                 },
@@ -30,7 +30,7 @@
                     url += this.longUrlFragment;
                     url += "/";
                     url += radarSite;
-                    url += this.extension;
+                    url += "_Topo_Long.jpg";
 
                     return url;
                 },
@@ -110,4 +110,4 @@
                 /* Static Methods */
             })
     });
-});
+})();

@@ -75,7 +75,7 @@
                     url += this.shortUrlFragment;
                     url += "/";
                     url += radarSite;
-                    url += this.extension;
+                    url += "_Highways_Short.gif";
 
                     return url;
                 },
@@ -84,7 +84,7 @@
                     url += this.longUrlFragment;
                     url += "/";
                     url += radarSite;
-                    url += this.extension;
+                    url += "_Highways_Long.gif";
 
                     return url;
                 },

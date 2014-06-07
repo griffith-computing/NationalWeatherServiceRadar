@@ -16,6 +16,7 @@
 
     <!-- Constants -->
     <script src="/js/consts/RadarImageConstants.js"></script>
+    <script src="/js/consts/LayerOptionConstants.js"></script>
 
     <!-- Renderers -->
     <script src="/js/renderers/RadarImageRenderer.js"></script>
@@ -47,18 +48,21 @@
         WARNINGS
         LEGEND 
         -->
-    <canvas id="cvs" width="600" height="550" style="z-index:0;">
-        Canvas is not supported.
-    </canvas>
-    <canvas id="radarCanvas" width="600" height="550" style="z-index:1">
-        Canvas is not supported.
-    </canvas>
+    <div style="position:relative; height:550px">
+        <canvas id="cvs" width="600" height="550" style="z-index:0; position:absolute">
+            Canvas is not supported.
+        </canvas>
+        <canvas id="radarCanvas" width="600" height="550" style="z-index:1; position:absolute">
+            Canvas is not supported.
+        </canvas>
+    </div>
 
-    <div id="locationsSelect" data-win-control="Controls.JsonSelect"></div>
+    <div style="bottom:10px">
+        <div id="locationsSelect" data-win-control="Controls.JsonSelect"></div>
 
-    <div id="radarOptionsSelect" data-win-control="Controls.JsonSelect"></div>
+        <div id="radarOptionsSelect" data-win-control="Controls.JsonSelect"></div>
 
-    <div id="layerOptionsGroup" data-win-control="Controls.JsonCheckboxGroup"></div>
-
+        <div id="layerOptionsGroup" data-win-control="Controls.JsonCheckboxGroup"></div>
+    </div>
 </body>
 </html>

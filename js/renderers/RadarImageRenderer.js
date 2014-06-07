@@ -62,7 +62,7 @@
                     return this._visible;
                 },
                 setVisible: function (value) {
-                    this._visible = true;
+                    this._visible = value;
 
                     if (this.getVisible()) {
                         this._loadRadarImage(this.getRadarImageType());

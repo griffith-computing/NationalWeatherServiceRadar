@@ -1,6 +1,7 @@
 ﻿// For an introduction to the Blank template, see the following documentation:
 // http://go.microsoft.com/fwlink/?LinkId=232509
 /// <reference path="/js/renderers/RadarImageRenderer.js" />
+/// <reference path="/js/consts/LayerOptionConstants.js" />
 (function () {
     "use strict";
 
@@ -48,14 +49,41 @@
                     var layerOptionsDom = document.getElementById("layerOptionsGroup");
                     var layerOptions = layerOptionsDom.winControl;
                     layerOptions.dataSource(result);
+                    layerOptionsDom.addEventListener("OnChange", layerOptionsOnChangeHandler.bind(this));
                 });
                 
-                radarImageRenderer.setVisible(true);
+                //radarImageRenderer.setVisible(true);
                 radarImageRenderer.setCanvasRenderingContext(document.getElementById("radarCanvas").getContext("2d"))
                 WinJS.Application.addEventListener("OnSelectEvent", jsonSelectOnSelectHandler.bind(this));
             }));
         }
     };
+
+    function layerOptionsOnChangeHandler(evt) {
+        console.log(evt);
+        var selected = evt.data.isSelected;
+        var value = evt.data.value;
+
+        switch (value) {
+            case Constants.LayerOptionConstants.TOPOGRAPHY_LAYER:
+                break;
+            case Constants.LayerOptionConstants.COUNTIES_LAYER:
+                break;
+            case Constants.LayerOptionConstants.RIVERS_LAYER:
+                break;
+            case Constants.LayerOptionConstants.HIGHWAY_LAYER:
+                break;
+            case Constants.LayerOptionConstants.CITIES_LAYER:
+                break;
+            case Constants.LayerOptionConstants.RADAR_LAYER:
+                radarImageRenderer.setVisible(selected);
+                break;
+            case Constants.LayerOptionConstants.WARNINGS_LAYER:
+                break;
+            case Constants.LayerOptionConstants.LEGEND_LAYER:
+                break;
+        }
+    }
 
     function imgLoaded() {
         var canvas = document.getElementById("cvs");

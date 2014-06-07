@@ -65,6 +65,7 @@
     <Content Include="js\builders\BaseReflectivityUrlBuilder.js" />
     <Content Include="js\builders\OverlaysUrlBuilder.js" />
     <Content Include="js\builders\RadarImageUrlBuilder.js" />
+    <Content Include="js\consts\LayerOptionConstants.js" />
     <Content Include="js\consts\RadarImageConstants.js" />
     <Content Include="js\controls\JsonCheckboxGroup.js" />
     <Content Include="js\controls\JsonSelect.js" />

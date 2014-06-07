@@ -9,6 +9,8 @@
 
                 this._dataSource = null;
 
+                this._selectedItems = [];
+
                 this._bindToDataSource = function (ds) {
                     this._dataSource.forEach(this._forEachHandler.bind(this));
                 };
@@ -46,18 +48,23 @@
 
                 this._checkboxSelectedHandler = function (evt) {
                     
-                    var evt = new CustomEvent(
-                       "OnChangeEvent",
-                       {
-                           detail: {
-                               value: evt.currentTarget.value,
-                               isChecked: evt.currentTarget.checked
-                           },
-                           bubbles: true,
-                           cancelable: true
-                       });
+                    var cEvt = document.createEvent("Event");
+                    var checked = evt.currentTarget.checked;
+                    var value = evt.currentTarget.value;
 
-                    this.element.dispatchEvent(evt);
+                    /*if (checked) {
+                        this._selectedItems.push(evt.currentTarget.value);
+                    } else {
+                        var index = this._selectedItems.indexOf(evt.currentTarget.value);
+                        this._selectedItems.splice(index, 1);
+                    }*/
+                    
+                    cEvt.initEvent("OnChange", true, false);
+                    cEvt.data = {};
+                    cEvt.data.value = value;
+                    cEvt.data.isSelected = checked;
+
+                    this.element.dispatchEvent(cEvt);
                 };
             }, {
                 dataSource: function (value) {

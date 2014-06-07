@@ -39,7 +39,7 @@
                     url += this.shortUrlFragment;
                     url += "/";
                     url += radarSite;
-                    url += this.extension;
+                    url += "_County_Short.gif";
 
                     return url;
                 },
@@ -48,7 +48,7 @@
                     url += this.longUrlFragment;
                     url += "/";
                     url += radarSite;
-                    url += this.extension;
+                    url += "_County_Long.gif";
 
                     return url;
                 },

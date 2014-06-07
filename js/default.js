@@ -2,6 +2,7 @@
 // http://go.microsoft.com/fwlink/?LinkId=232509
 /// <reference path="/js/renderers/RadarImageRenderer.js" />
 /// <reference path="/js/renderers/TopographyLayerRenderer.js" />
+/// <reference path="/js/renderers/CountiesLayerRenderer.js" />
 /// <reference path="/js/consts/LayerOptionConstants.js" />
 (function () {
     "use strict";
@@ -16,6 +17,7 @@
     var layerOptionsService = new Services.LayerOptionsService();
     var radarImageRenderer = new Renderers.RadarImageRenderer();
     var topoImageRenderer = new Renderers.TopographyLayerRenderer();
+    var countiesImageRenderer = new Renderers.CountiesLayerRenderer();
 
 
     app.onactivated = function (args) {
@@ -57,6 +59,7 @@
                 //radarImageRenderer.setVisible(true);
                 radarImageRenderer.setCanvasRenderingContext(document.getElementById("radarCanvas").getContext("2d"));
                 topoImageRenderer.setCanvasRenderingContext(document.getElementById("topoCanvas").getContext("2d"));
+                countiesImageRenderer.setCanvasRenderingContext(document.getElementById("countiesCanvas").getContext("2d"));
 
                 WinJS.Application.addEventListener("OnSelectEvent", jsonSelectOnSelectHandler.bind(this));
             }));
@@ -73,6 +76,7 @@
                 topoImageRenderer.setVisible(selected);
                 break;
             case Constants.LayerOptionConstants.COUNTIES_LAYER:
+                countiesImageRenderer.setVisible(selected);
                 break;
             case Constants.LayerOptionConstants.RIVERS_LAYER:
                 break;
@@ -99,6 +103,7 @@
     function updateRenderLocations(locationId) {
         radarImageRenderer.setRadarSiteId(locationId);
         topoImageRenderer.setRadarSiteId(locationId);
+        countiesImageRenderer.setRadarSiteId(locationId);
     };
 
     function updateRadarImageRendererImageType(imageType) {

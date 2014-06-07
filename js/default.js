@@ -5,6 +5,7 @@
 /// <reference path="/js/renderers/CountiesLayerRenderer.js" />
 /// <reference path="/js/renderers/RiversLayersRenderer.js" />
 /// <reference path="/js/renderers/HighwayLayersRenderer.js" />
+/// <reference path="/js/renderers/CitiesLayerRenderer.js" />
 /// <reference path="/js/consts/LayerOptionConstants.js" />
 (function () {
     "use strict";
@@ -22,7 +23,7 @@
     var topoImageRenderer = new Renderers.TopographyLayerRenderer();
     var countiesImageRenderer = new Renderers.CountiesLayerRenderer();
     var highwayImageRenderer = new Renderers.HighwayLayerRenderer();
-
+    var citiesImageRenderer = new Renderers.CitiesLayerRenderer();
 
     app.onactivated = function (args) {
         if (args.detail.kind === activation.ActivationKind.launch) {
@@ -66,6 +67,7 @@
                 riversImageRenderer.setCanvasRenderingContext(document.getElementById("riversCanvas").getContext("2d"));
                 countiesImageRenderer.setCanvasRenderingContext(document.getElementById("countiesCanvas").getContext("2d"));
                 highwayImageRenderer.setCanvasRenderingContext(document.getElementById("highwaysCanvas").getContext("2d"));
+                citiesImageRenderer.setCanvasRenderingContext(document.getElementById("citiesCanvas").getContext("2d"));
 
                 WinJS.Application.addEventListener("OnSelectEvent", jsonSelectOnSelectHandler.bind(this));
             }));
@@ -91,6 +93,7 @@
                 highwayImageRenderer.setVisible(selected);
                 break;
             case Constants.LayerOptionConstants.CITIES_LAYER:
+                citiesImageRenderer.setVisible(selected);
                 break;
             case Constants.LayerOptionConstants.RADAR_LAYER:
                 radarImageRenderer.setVisible(selected);
@@ -114,6 +117,7 @@
         countiesImageRenderer.setRadarSiteId(locationId);
         riversImageRenderer.setRadarSiteId(locationId);
         highwayImageRenderer.setRadarSiteId(locationId);
+        citiesImageRenderer.setRadarSiteId(locationId);
     };
 
     function updateRadarImageRendererImageType(imageType) {

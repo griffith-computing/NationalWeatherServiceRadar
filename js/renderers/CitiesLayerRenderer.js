@@ -3,10 +3,10 @@
     "use strict"
 
     WinJS.Namespace.define("Renderers", {
-        HighwayLayerRenderer: WinJS.Class.define(
-            function HighwayLayerRenderer() {
+        CitiesLayerRenderer: WinJS.Class.define(
+            function CitiesLayerRenderer() {
                 this._overlaysUrlBuilder = new Builders.OverlaysUrlBuilder();
-                this._highwayImage = new Image();
+                this._citiesImage = new Image();
                 this._visible = false;
                 this._radarSiteId = "";
                 this._canvasRenderingContext = null;
@@ -48,8 +48,8 @@
                 },
 
                 _renderRadarImage: function () {
-                    this._highwayImage.isLoaded = true;
-                    this.getCanvasRenderingContext().drawImage(this._highwayImage, 0, 0);
+                    this._citiesImage.isLoaded = true;
+                    this.getCanvasRenderingContext().drawImage(this._citiesImage, 0, 0);
                 },
 
                 _loadRadarImage: function () {
@@ -61,10 +61,10 @@
 
                     var loading = false;
 
-                    if (!this._highwayImage.isLoaded) {
+                    if (!this._citiesImage.isLoaded) {
                         loading = true;
-                        this._highwayImage.onload = this._renderRadarImage.bind(this);
-                        this._highwayImage.src = this._overlaysUrlBuilder.getShortRangeHighwaysOverlayForRadarSite(this.getRadarSiteId());
+                        this._citiesImage.onload = this._renderRadarImage.bind(this);
+                        this._citiesImage.src = this._overlaysUrlBuilder.getShortRangeCitiesOverlayForRadarSite(this.getRadarSiteId());
                     }
 
                     if (!loading)
@@ -82,7 +82,7 @@
                 },
 
                 _clearRadarImages: function () {
-                    this._highwayImage.isLoaded = false;
+                    this._citiesImage.isLoaded = false;
                 }
             }, {
             })

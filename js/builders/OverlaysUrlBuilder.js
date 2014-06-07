@@ -93,7 +93,7 @@
                     url += this.shortUrlFragment;
                     url += "/";
                     url += radarSite;
-                    url += this.extension;
+                    url += "_City_Short.gif";
 
                     return url;
                 },
@@ -102,7 +102,7 @@
                     url += this.longUrlFragment;
                     url += "/";
                     url += radarSite;
-                    url += this.extension;
+                    url += "_City_Long.gif";
 
                     return url;
                 }

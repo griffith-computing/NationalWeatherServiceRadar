@@ -72,6 +72,7 @@
     <Content Include="js\default.js" />
     <Content Include="css\default.css" />
     <Content Include="js\parsers\JsonParser.js" />
+    <Content Include="js\renderers\CitiesLayerRenderer.js" />
     <Content Include="js\renderers\CountiesLayerRenderer.js" />
     <Content Include="js\renderers\HighwayLayerRenderer.js" />
     <Content Include="js\renderers\RadarImageRenderer.js" />

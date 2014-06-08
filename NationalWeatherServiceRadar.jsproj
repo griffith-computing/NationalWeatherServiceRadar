@@ -63,6 +63,7 @@
     <Content Include="images\splashscreen.png" />
     <Content Include="images\storelogo.png" />
     <Content Include="js\builders\BaseReflectivityUrlBuilder.js" />
+    <Content Include="js\builders\LegendUrlBuilder.js" />
     <Content Include="js\builders\OverlaysUrlBuilder.js" />
     <Content Include="js\builders\RadarImageUrlBuilder.js" />
     <Content Include="js\builders\WarningsUrlBuilder.js" />
@@ -76,6 +77,7 @@
     <Content Include="js\renderers\CitiesLayerRenderer.js" />
     <Content Include="js\renderers\CountiesLayerRenderer.js" />
     <Content Include="js\renderers\HighwayLayerRenderer.js" />
+    <Content Include="js\renderers\LegendLayerRenderer.js" />
     <Content Include="js\renderers\RadarImageRenderer.js" />
     <Content Include="js\renderers\RiversLayerRenderer.js" />
     <Content Include="js\renderers\TopographyLayerRenderer.js" />

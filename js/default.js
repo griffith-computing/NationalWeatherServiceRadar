@@ -7,6 +7,7 @@
 /// <reference path="/js/renderers/HighwayLayersRenderer.js" />
 /// <reference path="/js/renderers/CitiesLayerRenderer.js" />
 /// <reference path="/js/renderers/WarningsLayerRenderer.js" />
+/// <reference path="/js/renderers/LegendLayerRenderer.js" />
 /// <reference path="/js/consts/LayerOptionConstants.js" />
 (function () {
     "use strict";
@@ -26,6 +27,7 @@
     var highwayImageRenderer = new Renderers.HighwayLayerRenderer();
     var citiesImageRenderer = new Renderers.CitiesLayerRenderer();
     var warningsImageRenderer = new Renderers.WarningsLayerRenderer();
+    var legendImageRenderer = new Renderers.LegendLayerRenderer();
 
     app.onactivated = function (args) {
         if (args.detail.kind === activation.ActivationKind.launch) {
@@ -71,6 +73,7 @@
                 highwayImageRenderer.setCanvasRenderingContext(document.getElementById("highwaysCanvas").getContext("2d"));
                 citiesImageRenderer.setCanvasRenderingContext(document.getElementById("citiesCanvas").getContext("2d"));
                 warningsImageRenderer.setCanvasRenderingContext(document.getElementById("warningsCanvas").getContext("2d"));
+                legendImageRenderer.setCanvasRenderingContext(document.getElementById("legendCanvas").getContext("2d"));
 
                 WinJS.Application.addEventListener("OnSelectEvent", jsonSelectOnSelectHandler.bind(this));
             }));
@@ -105,6 +108,7 @@
                 warningsImageRenderer.setVisible(selected);
                 break;
             case Constants.LayerOptionConstants.LEGEND_LAYER:
+                legendImageRenderer.setVisible(selected);
                 break;
         }
     }
@@ -123,10 +127,12 @@
         highwayImageRenderer.setRadarSiteId(locationId);
         citiesImageRenderer.setRadarSiteId(locationId);
         warningsImageRenderer.setRadarSiteId(locationId);
+        legendImageRenderer.setRadarSiteId(locationId);
     };
 
     function updateRadarImageRendererImageType(imageType) {
         radarImageRenderer.setRadarImageType(imageType);
+        legendImageRenderer.setRadarImage(imageType);
     };
 
     function radarOptionsOnSelectHandler(evt) {

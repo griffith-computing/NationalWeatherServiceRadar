@@ -114,7 +114,7 @@
                             if (!this.baseReflectivityImage.isLoaded) {
                                 loading = true;
                                 this.baseReflectivityImage.onload = this._renderRadarImage.bind(this, radarImage);
-                                this.baseReflectivityImage.src = this.radarImageUrlBuilder.buildCurrentBaseVelocityUrlFromRadarSiteId(this.getRadarSiteId());
+                                this.baseReflectivityImage.src = this.radarImageUrlBuilder.buildCurrentShortRangeBaseReflectivityUrlFromRadarSiteId(this.getRadarSiteId());
                             }
                             break;
                         case Constants.RadarImageConstants.STORM_RELATIVE_MOTION:

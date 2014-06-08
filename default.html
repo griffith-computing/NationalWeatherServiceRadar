@@ -14,6 +14,7 @@
     <script src="/js/builders/OverlaysUrlBuilder.js"></script>
     <script src="/js/builders/RadarImageUrlBuilder.js"></script>
     <script src="/js/builders/WarningsUrlBuilder.js"></script>
+    <script src="/js/builders/LegendUrlBuilder.js"></script>
 
     <!-- Constants -->
     <script src="/js/consts/RadarImageConstants.js"></script>
@@ -27,6 +28,7 @@
     <script src="/js/renderers/HighwayLayerRenderer.js"></script>
     <script src="/js/renderers/CitiesLayerRenderer.js"></script>
     <script src="/js/renderers/WarningsLayerRenderer.js"></script>
+    <script src="/js/renderers/LegendLayerRenderer.js"></script>
     
     <!-- Parsers -->
     <script src="/js/parsers/JsonParser.js"></script>
@@ -75,6 +77,9 @@
             Canvas is not supported.
         </canvas>
         <canvas id="warningsCanvas" width="600" height="550" style="z-index:6; position:absolute">
+            Canvas is not supported.
+        </canvas>
+        <canvas id="legendCanvas" width="600" height="550" style="z-index:7; position:absolute">
             Canvas is not supported.
         </canvas>
     </div>
